@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box  ;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+:root{
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+.dark-theme{
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+#icon{
+width: 30px;
+cursor: pointer;
+padding-top: 12px;
+}
+
+.Logo{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: right;
+    flex: 1;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    display: block;
+    padding: 1rem;
+}
+
+.navbar-links ul li a:hover{
+    text-decoration: none;
+    color: #f96c6c;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 100px;
+}
+
+.mainpage img{
+    height: 500px;
+    width: 554px;
+    position: absolute;
+    margin-left: 650px;
+    
+}
+
+.mainpage{
+margin-left: 8%;
+margin-top: 10%;
+position: relative;
+}
+
+.aboutpage{
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: justify;
+    margin-top: 20%;
+    padding-top: 150px;
+}
+
+
+.servicespage{
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: justify;
+    margin-top: 20%;
+    padding-top: 85px;
+    padding-bottom: 300px;
+}
+
+.servicespage .card{
+    width: 280px;
+    height: 180px;
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 0.7em #868686;
+    transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: var(--primary-color) 0.2em solid;
+    float: left;
+    margin-left: 7%;
+    margin-bottom: 2%;
+    margin-top: 100px;
+    left: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    text-align: center;
+   }
+
+   .servicespage .card:hover {
+    border: #f96c6c 0.2em solid;
+   }
+
+
+ #uiux, #webdes, #mobileres{ 
+text-align: center;
+ }
+
+ .servicespage #skilltitle{
+    padding-top: 10px;
+ }
+
+.servicespage #skilldescription{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.educationpage{
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: justify;
+    margin-top: 20%;
+    padding-top: 85px;
+    padding-bottom: 100px;
+}
+
+.educationpage .card{
+    width: 450px;
+    height: 254px;
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 0.7em #868686;
+    transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: var(--primary-color) 0.2em solid;
+    float: left;
+    margin-left: 83px;
+    margin-bottom: 5%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+   }
+
+.educationpage .card #Earistlogo{
+    height: 110px;
+    width: 115px;
+    margin-left: 160px;
+    margin-top: 15px;
+   }
+
+.educationpage .card #LCCMlogo{
+    height: 110px;
+    width: 115px;
+    margin-left: 160px;
+    margin-top: 15px;
+   }
+
+.educationpage .card h1{
+   text-align: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+   font-size: 20px;
+   margin-left: 40px;
+   margin-right: 40px;
+   margin-top: 10px;
+
+}
+
+.educationpage .card h2{
+    text-align: center;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: var(--secondary-color);
+}
+
+   .educationpage .card:hover {
+    border: #f96c6c 0.2em solid;
+    text-decoration: none;
+   }
+
+
+.skillspage{
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: justify;
+    margin-top: 20%;
+    padding-top: 85px;
+    padding-bottom: 100px;
+}
+
+.progress{
+    margin-bottom: 50px;
+}
+
+.contactpage{
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: justify;
+    margin-top: 20%;
+    padding-top: 85px;
+    padding-bottom: 5%;
+}
+
+.mainpage h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding-top: 150px;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+.aboutpage h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.servicespage h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.educationpage h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.skillspage h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.contactpage h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.mainpage span{
+    color: red;
+   
+}
+
+.aboutpage span{
+    color: red;
+}
+
+.servicespage span{
+    color: red;
+}
+
+.educationpage span{
+    color: red;
+}
+
+.skillspage span{
+    color: red;
+}
+
+.contactpage span{
+    color: red;
+}
+
+.mainpage p{
+    color: var(--secondary-color);
+    line-height: 22px;
+}
+
+.aboutpage p{
+    line-height: 22px;
+}
+
+.servicespage p{
+    line-height: 22px;
+}
+
+.skillspage p{
+    line-height: 22px;
+}
+
+.contactpage p{
+    line-height: 22px;
+}
+
+  #dlbutton {
+    --color: #ff3535;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    margin-left: 160px;
+    background-color: var(--primary-color);
+    border-color: #ff3535;
+   }
+   
+   #dlbutton:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   #dlbutton:hover {
+    color: #fff;
+   }
+   
+   #dlbutton:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   #dlbutton:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   #dlbutton:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+   
+@media only screen and (max-width: 480px){
+
+    .toggle-button{
+        display: flex;
+
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+  
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+    
+  html, body {
+    max-width: 100%;
+    text-align: justify;
+    overflow-x: hidden;
+}
+
+  .mainpage{
+    margin-top: 0;
+    padding-top: 70px;
+    position: relative;
+    padding-bottom: 10px;
+    }
+
+
+    .mainpage img{
+        height: 300px;
+        width: 354px;
+        right: 10px;
+        
+    }
+
+    .mainpage p{
+    text-align: justify;
+    margin-right: 10%;
+    }
+
+    .mainpage h1{
+        font-size: 45px;
+        color: var(--secondary-color);
+        margin-bottom: 20px;
+        margin-top: 150px;
+    }
+
+    .mainpage span{
+    display: block;
+    }
+    
+    #dlbutton{
+        margin-left: 130px;
+    }
+  
+
+    .aboutpage{
+        margin-top: 0;
+        padding-top: 70px;
+        }
+    
+    .aboutpage h1{
+            font-size: 50px;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+    
+    .servicespage{
+        margin-top: 70px;
+    }
+    .servicespage h1{
+        font-size: 50px;
+        color: var(--secondary-color);
+        margin-bottom: 20px;
+    }
+    .servicespage .card{
+        margin-left: 10px;
+        margin-top: 13px;
+    }
+
+    .educationpage{
+        padding-top: 300px;
+    }
+
+    .educationpage h1{
+        font-size: 50px;
+        color: var(--secondary-color);
+        margin-bottom: 20px;
+}    
+        .educationpage .card {
+            width: 300px;
+            height: 230px;
+            background: var(--primary-color);
+            border-radius: 0.4em;
+            box-shadow: 0.3em 0.3em 0.7em #00000015;
+            transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: var(--primary-color) 0.2em solid;
+            float: left;
+            margin-bottom: 5%;
+            text-align: justify;
+           margin-left: 15px;
+           }
+           
+    .educationpage .card #Earistlogo{
+        margin-top: 10px;
+        margin-left: 85px;
+    }
+
+    .educationpage .card #LCCMlogo{
+        margin-top: 10px;
+        margin-left: 85px;
+    }
+
+    .educationpage .card h1{
+        font-size: 17px;
+        margin-bottom: 5px;
+        
+    }
+
+    .educationpage .card h2{
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    .skillspage{
+            padding-top: 400px;
+          
+        }
+
+    .skillspage h1{
+                font-size: 50px;
+                color: var(--secondary-color);
+                margin-bottom: 20px;
+        }
+ 
+    .contactpage{
+            margin-top: 0;
+            padding-top: 70px;
+          
+        }
+        
+    .contactpage h1{
+                font-size: 47px;
+                color: var(--secondary-color);
+                margin-bottom: 20px;
+         }
+    
+    .contactpage h4{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+        
+}
